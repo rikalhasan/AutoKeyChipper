@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Tugas Auto Key Cypher</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col">
+                
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Auto Key Chipper</h2>
+                        <p class="card-text">Cipher Autokey adalah salah satu contoh variasi dari vigenere cipher. Berbeda dengan vigencere chipher, pada auto key chipper kunci tidak digunakan berulang, jika panjang    kunci    lebih    kecil    dari    panjang plaintext,   maka   kunci   disambung   dengan plaintext       tersebut.</p>
+                        <h5 class="card-title">Masukkan Text</h5>
+                        <div class="input-group input-grup-lg">
+                            <input type="text" class="form-control" name="input-text" id="input_text">
+                        </div>
+                        <h5 class="card-title mt-2">Key</h5>
+                        <div class="input-grup">
+                            <input type="text" class="form-control" name="input-key" id="input_key">
+                        </div>
+                        <div class="mt-3">
+                            <a class="btn btn-primary text-white" id="encode">Enkripsi</a>
+                            <a class="btn btn-primary text-white" id="decode">Dekripsi</a>
+                            <button class="btn btn-primary" style="display: none;" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="collapse">
+                                Tabel Pengerjaan
+                              </button>
+                        </div>
+                        <div class="error" id="error"></div>
+                    <div class="mt-5" id="resdiv" style="display: none;">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <h5 id="inputstring">Plain Text</h5></td>
+                                <td id="plaintext"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5 id="resultstring">Encoded Text</h5></td>
+                                <td id="encodedtext"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="col">
+                
+            </div>
+        </div>
+    <div class="collapse" id="collapseExample">
+  <div class="card-body mt-3">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-8">
+            <div id="tabel">
+            </div>
+        </div>
+        <div class="col"></div>
+        </div>
+  </div>
+</div>
+
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/autokey.js"></script>
+  </body>
+</html>
